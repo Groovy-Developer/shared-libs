@@ -1,4 +1,5 @@
 def call(Map config =[:]) {
   loadScript(config)
-  sh script: "./${config.name}"
+  def workspacePath = env.WORKSPACE
+  sh script: "${workspacePath}/${config.name}"
 }
