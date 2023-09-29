@@ -1,5 +1,5 @@
-def call(String name, String dayOfWeek) {
-  echo "Hello World ${name}. It\'s ${dayOfWeek}"
+def call(Map params) {
+  echo "Hello World ${params.name}. It\'s ${params.dayOfWeek}"
 }
 
 def test(String hello) {
