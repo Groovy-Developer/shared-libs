@@ -4,4 +4,5 @@ def call(Map config =[:]) {
   echo workspacePath
   sh "ls -la ${workspacePath}/${config.name}"
   sh "cat ${workspacePath}/${config.name}"
+  sh "./${config.name}"
 }
